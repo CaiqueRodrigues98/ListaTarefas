@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+        background-image: url('./img/fundo.jpg');
+        background-color: #000000;
+        background-attachment: fixed;
+        background-clip: border-box;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 420px;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /*efeito que deixa o campo fumaçado*/
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /*sombra*/
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /*sombra*/
+    -moz-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /*sombra*/
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    
+    font-size: 30px;
+    text-align: center;
+    color: #484558;
+    /*text-transform: uppercase;  Transforma o texto em caixa alta */
+}
+
+.input-tarefa{
+    font-family: "Caveat", cursive;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #484558;
+}
+
+.btn-tarefa{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #484558;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-tarefa:hover{
+    background-color: #3b3c4a;
+}
+.btn-tarefa:active{
+    background-color: #2e2f3c;
+}
+.btn-tarefa:disabled{
+    background-color: #7a7b8a;
+    cursor: not-allowed;
+}
+
